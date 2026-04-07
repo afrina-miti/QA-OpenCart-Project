@@ -1,0 +1,51 @@
+Project: OpenCart Demo – QA Testing
+Prepared by: Miti
+Date: 06-April-2026
+
+1. Overall Results
+-------------------
+UI / Functional Test Cases: 68
+- Pass: 57
+- Fail: 9
+- N/A: 2
+
+API Test Cases:
+- Reqres.in (Postman): 8 Pass / 0 Fail
+- OpenCart API Routes (Browser DevTools): 3 Pass / 0 Fail
+
+Database Test Cases: 6 Total
+- Pass: 5
+- Fail: 1
+
+Bug Report: 25 Total
+- Functional: 11
+- UI: 14
+- Critical: 3
+- Major: 4
+- Moderate: 6
+- Minor: 8
+- Trivial: 4
+
+2. Key Observations
+-------------------
+- Login & Registration: Missing 'Remember Me', Confirm Password field, weak password allowed
+- Checkout: Unable to place orders due to stock errors, validation issues with empty fields
+- Product & Cart: Out-of-stock items can be added, cart count sometimes not updating instantly
+- UI Issues: Mobile responsiveness issues for buttons, tables, dropdowns, and banners
+- Database: Order creation record failed in oc_order table
+
+3. API Notes
+-------------
+- Reqres.in endpoints successfully tested (CRUD, Login, Register)
+- OpenCart demo API routes tested via browser network tab; Add/View/Remove Cart working
+
+4. Recommendations
+-------------------
+- Fix critical functional bugs first: Checkout, Registration password validation, Out-of-stock products
+- Enhance UI for mobile responsiveness
+- Verify order creation in database
+- Continue API testing for all CRUD operations
+
+5. Conclusion
+--------------
+The OpenCart demo site functions well for basic browsing and cart operations, but critical bugs prevent reliable checkout and registration. API testing with Reqres.in confirms understanding of REST endpoints and request/response validation.

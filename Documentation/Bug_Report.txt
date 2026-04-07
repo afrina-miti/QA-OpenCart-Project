@@ -1,0 +1,33 @@
+OpenCart Demo – Bug Report Summary
+
+Total Bugs: 25
+- Functional: 11
+- UI: 14
+- Critical: 3
+- Major: 4
+- Moderate: 6
+- Minor: 8
+- Trivial: 4
+
+Critical Functional Bugs:
+- Weak password accepted without validation
+- Out-of-stock product added to cart
+- Unable to place order – stock availability error
+
+Major Functional Bugs:
+- Session timeout not enforced
+- Checkout without login shows empty cart
+- Missing Confirm Password field
+
+UI Issues:
+- Login button misaligned on mobile
+- Registration labels too small
+- Star rating widget issues
+- Cart total misaligned on mobile
+- Mobile hamburger menu not closing
+- Banner images slow to load
+
+Priority for Fixes:
+- High: Critical + Major bugs
+- Medium: Moderate bugs
+- Low: Minor & Trivial bugs

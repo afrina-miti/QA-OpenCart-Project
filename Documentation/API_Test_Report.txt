@@ -1,0 +1,30 @@
+API Testing – OpenCart Demo & Reqres.in
+
+Tools: Postman, Browser DevTools (F12 → Network Tab)
+
+1️. Reqres.in API Testing (Postman)
+Endpoints Tested: Create User, Update User, Delete User, Get User List, Login, Register
+Methods: GET · POST · PUT · DELETE
+
+Results:
+TC_API_01 – Create User       -> 201 Created, ID generated
+TC_API_02 – Update User       -> 200 OK, Updated successfully
+TC_API_03 – Delete User       -> 204 No content, Deleted successfully
+TC_API_04 – Get User List     -> 200 OK, List of users returned
+TC_API_05 – Login Success     -> 200 OK, Token received
+TC_API_06 – Login Failed      -> 400 Bad Request, Missing password error
+TC_API_07 – Get Single User Not Found -> 404 Not Found, User does not exist
+TC_API_08 – Register User     -> 200 OK, ID + token received
+
+All Reqres API tests passed successfully.
+
+2️. OpenCart Demo API Testing (Observed via Browser DevTools)
+Endpoints Tested: Add to Cart, View Cart, Remove from Cart
+Methods: GET · POST
+
+Results:
+TC_AddToCart       -> 200 OK, product added, cart count updated
+TC_ViewCart        -> 200 OK, cart items displayed as expected
+TC_RemoveFromCart  -> 200 OK, product removed, cart updated
+
+All OpenCart API routes tested successfully.

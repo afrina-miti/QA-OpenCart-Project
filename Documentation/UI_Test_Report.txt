@@ -1,0 +1,19 @@
+Refer to the detailed table for UI and functional test cases.
+Sections included:
+- Login & Authentication
+- Registration
+- Search
+- Product & Product Detail
+- Shopping Cart
+- Checkout
+- My Account
+- Homepage & Navigation
+
+Note: Failed or N/A test cases include:
+- Remember Me option missing
+- Session Timeout not enforced
+- Confirm Password field missing
+- Weak password accepted
+- Special characters in name accepted
+- Out-of-stock products added to cart
+- Checkout fails in some scenarios

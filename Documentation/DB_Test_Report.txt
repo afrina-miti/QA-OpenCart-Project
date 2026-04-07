@@ -1,0 +1,12 @@
+API Testing – OpenCart Demo
+
+Tool: Postman
+Endpoints Tested: Add to Cart, View Cart, Remove from Cart
+Method: GET / POST
+
+Results:
+TC_AddToCart       -> 200 OK, product added, cart count updated
+TC_ViewCart        -> 200 OK, cart items displayed
+TC_RemoveFromCart  -> 200 OK, product removed successfully
+
+All API tests passed successfully.
