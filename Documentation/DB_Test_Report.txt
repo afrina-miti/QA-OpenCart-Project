@@ -1,12 +1,11 @@
-API Testing – OpenCart Demo
+Database Testing – OpenCart Demo
 
-Tool: Postman
-Endpoints Tested: Add to Cart, View Cart, Remove from Cart
-Method: GET / POST
+Tables Tested: oc_customer, oc_order, oc_cart, oc_wishlist, oc_product
 
-Results:
-TC_AddToCart       -> 200 OK, product added, cart count updated
-TC_ViewCart        -> 200 OK, cart items displayed
-TC_RemoveFromCart  -> 200 OK, product removed successfully
-
-All API tests passed successfully.
+Summary:
+DB_01 – Customer creation      -> Pass
+DB_02 – Customer login activity -> Pass
+DB_03 – Order creation          -> Fail (order record not created properly)
+DB_04 – Cart table              -> Pass
+DB_05 – Wishlist table          -> Pass
+DB_06 – Product details         -> Pass
